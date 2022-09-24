@@ -295,16 +295,16 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7150210425967262) 0%, rgba(210,21
             display: flex;
             align-items: center;
             flex-direction: column;
-            
+            padding: 0 40px;
 
             .card{
                 top: 10px;
                 right: -130px;
                 background-color: #fff;
-                
                 box-shadow: rgba(0, 0, 0, 0.12) 30px 30px 40px;
                 border-radius: 10px;
-                margin-bottom: 20px;
+                margin-bottom: 80px;
+                width: 100%;
                 .top-content{
                     padding: 10px 35px;
                     display: flex;
@@ -337,11 +337,28 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7150210425967262) 0%, rgba(210,21
                 }
             }
 
-            .background{
+            .floating-text{
+                background-color: #fff;
+                padding: 10px 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                z-index: 999;
+                align-self: flex-start;
 
+                box-shadow: rgba(0, 0, 0, 0.12) 30px 30px 40px;
+                p{
+                    font-size: 12px;
+                }
+            }
+
+           
+            .background{
+                margin-top: 140px;
                 position: relative;
                 height: 500px;
-                width: 340px;
+                width: 320px;
+                // width: 80%;
                 border-radius: 20px;
                 margin-bottom: 40px;
                 display: flex;
@@ -349,6 +366,37 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7150210425967262) 0%, rgba(210,21
                 align-items: flex-end;
                 background: rgb(32,32,32);
                 background: linear-gradient(0deg, rgba(32,32,32,0.7402311266303396) 6%, rgba(204,204,204,0) 17%, rgba(164,164,164,0.14359247116815477) 92%);
+                .stat-container{
+                    position: absolute;
+                    right: 0;
+                    top: -120px;
+                    color: #fff;
+                    .top{
+                        position: relative;
+                        background-color: #EB1974;
+                        padding: 10px 16px;
+                        border-radius: 14px 14px 0px 14px;
+                        margin-bottom: 16px;
+                        font-size: 12px;
+                        img{
+                            position: absolute;
+                            width: 38px;
+                            height: auto;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            top: -20px;
+                            left: 112px;
+                            z-index: 999;
+                        }
+                    }
+
+                    .bottom{
+                        background-color: #EB1974;
+                        border-radius: 14px 14px 0px 14px;
+                        padding: 20px;
+                    }
+                }
+    
                 img{
                     position: absolute;
                     bottom: 0;
@@ -394,6 +442,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7150210425967262) 0%, rgba(210,21
                 border-radius: 20px;
                 margin-bottom: 40px;
                 box-shadow: rgba(0, 0, 0, 0.12) 30px 30px 40px;
+                width: 100%;
                 .top-content{
                     display: flex;
                     flex-direction: row;

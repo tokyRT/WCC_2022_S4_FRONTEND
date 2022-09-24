@@ -7,6 +7,7 @@
     background: $linear-gradient;
     color: #fff;
     margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 30px 30px 30px;
 }
 
 .btn-outline{
@@ -24,7 +25,7 @@
             padding: 14px 40px;
             position: relative;
             border-radius: 10px;
-            
+            width: 100%;
             .text{
                 position: relative;
                 z-index: 1000;
@@ -66,10 +67,11 @@
 @media(max-width: 600px){
     .btn-filled{
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 10px;
     }
 
     .btn-outline{
