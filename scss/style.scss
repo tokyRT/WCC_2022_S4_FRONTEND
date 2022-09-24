@@ -25,10 +25,17 @@ body{
         z-index: -1;
     }
 
+    .ellipse-bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
     .bg-circle{
         position: absolute;
-        bottom: -100px;
-        left: 60px;
+        bottom: -140px;
+        left: 160px;
     }
 
 }
