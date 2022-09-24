@@ -1,0 +1,94 @@
+.nav-container{
+    display: flex;
+    justify-content: center;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+        align-items: center;
+        max-width: 1450px;
+        width: 100%;
+    
+        ul{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            li{
+                margin-left: 60px;
+                position: relative;
+                a{
+                    color: #000;
+                    text-decoration: none;
+                }
+                .login{
+                    border: 1px solid $pink;
+                    padding: 10px 40px;
+                    border-radius: 10px;
+                }
+    
+                
+                &:not(.login,.active)::after{
+                    content: "";
+                    position: absolute;
+                    left: 40%;
+                    bottom: 0px;
+                    width: 8px;
+                    height: 8px;
+                    opacity: 0;
+                    border-radius: 4px;
+                    background-color: $pink;
+                    transition: all 0.3s;
+                }
+    
+                &:not(.login):hover::after{
+                    opacity: 1;
+                    bottom: -14px;
+                }
+                &:not(.login):hover{
+                    a{
+                        color: $pink;
+                        // font-weight: 700;
+                    }
+                }
+            }
+    
+            .active{
+                a{
+                    color: $pink;
+                    font-weight: 700;
+                }
+            }
+            .active::after{
+                content: "";
+                position: absolute;
+                left: 40%;
+                bottom: -14px;
+                width: 8px;
+                height: 8px;
+                border-radius: 4px;
+                background-color: $pink;
+                transition: all 0.3s;
+            }
+        }
+    
+    }
+
+    @media(max-width: 1220px){
+        nav{
+            ul{
+                display: none;
+            }
+        }
+    }
+
+    @media(min-width: 1220px){
+        nav{
+            ul{
+
+            }
+            .menu-icon{
+                display: none;
+            }
+        }
+    }
+}

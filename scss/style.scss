@@ -2,8 +2,53 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
+
+body{
+    
+}
+
+.background-image{
+    background-image: url('../assets/images/background-line-dots.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    .ellipse{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .bg-circle{
+        position: absolute;
+        bottom: -100px;
+        left: 60px;
+    }
+
+}
+@media(max-width: 1220px){
+    .background-image{
+        background-image: none;
+    }
+    .bg-circle{
+        display: none
+    }  
+
+    
+}
+@media(max-width: 570px){
+    
+}
+
+
 @import 'partials/variables';
+@import 'partials/button';
 @import 'partials/nav';
 @import 'partials/loader';
 @import 'partials/hero';

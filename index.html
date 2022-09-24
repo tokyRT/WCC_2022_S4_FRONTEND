@@ -7,9 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/style.min.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="overlay">
+    <!-- <div class="overlay">
         <div></div>
         <div></div>
         <div></div>
@@ -50,8 +54,201 @@
             </div>
 
         </div>
+    </div> -->
+    <div class="background-image">
+        <img src="./assets/images/ellipse.png" class="ellipse" alt="ellipse" />
+        <img src="./assets/images/circle-line.png" class="bg-circle" alt="bg-circle" />
+        <div class="nav-container">
+            <nav>
+                <div class="logo">
+                    <img src="./assets/images/logo.svg" alt="logo" />
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Products</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li class="login">
+                        <a href="" class="btn-outline">
+                            <div class="background">
+                                <span class="background-hover"></span>
+                                <span class="text">
+                                    Login
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="./assets/icons/menu.svg" alt="menu" />
+                </div>
+            </nav>
+        </div>
+        <div class="bg-mobile">
+            <img src="./assets/images/bg-mobile.svg" class="bg-mobile" />
+        </div>
+        <div class="bg-tablet">
+            <img src="./assets/images/bg-tablet.svg" class="bg-tablet" />
+        </div>
+            <div class="container">
+                <div class="hero">
+                    <div class="left">
+                        
+                        <div>
+                            <div class="title">
+                                <h1>Reinventing the <br>
+                                    way you connect
+                                </h1>
+                            </div> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, recusandae quia facilis beatae.</p>
+                            <div class="button-container">
+                                <a href="" class="btn btn-filled">Start trial</a>
+                                <a href="" class="btn-outline">
+                                        <div class="background">
+                                            <span class="background-hover"></span>
+                                            <span class="text">
+                                                <i class="fa-solid fa-play"></i>
+                                                Watch Demo
+                                            </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="right">
+                        <div class="background">
+                            <img src="./assets/images/circle-line.png" alt="circle" class="circle-top" />
+                            <img src="./assets/images/circle-line.png" alt="circle2" class="circle-bottom" />
+                            <img src="./assets/images/a.png" alt="a" class="main-image">
+                            <img src="./assets/images/user4.png" alt="user4" class="user4" />
+                            <div class="card">
+                                <div class="top-content">
+                                    <img src="./assets/images/jane.png" class="user" />
+                                    <h3>Jane</h3>
+                                    <p>CEO</p>
+                                </div>
+                                <div class="bottom">
+                                    <svg width="108" height="10" viewBox="0 0 108 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4.94879" y1="4.98542" x2="103.116" y2="4.98542" stroke="#F1F1F1" stroke-width="8.68737" stroke-linecap="round"/>
+                                        <line x1="4.94879" y1="4.98542" x2="64.8916" y2="4.98542" stroke="#EE5094" stroke-width="8.68737" stroke-linecap="round"/>
+                                    </svg>
+                                    <p>Transfering files...</p>
+                                </div>
+                            </div>
+                            <div class="bottom-card">
+                                <div class="top-content">
+                                    <img src="./assets/images/sam.png" class="user" />
+                                    <h3>Jane</h3>
+                                    <p>Account manager</p>
+                                </div>
+                                <div class="bottom-content">
+                                    <div style="width: 100%; border-right: 1px solid #DDD;">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div style="width: 100%;">
+                                        <img src="./assets/icons/message.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-text">
+                                <p>I need that report now :)</p>
+                            </div>
+                            <div class="text">
+                                <h3>John</h3>
+                                <p>Bla bla bla</p>
+                            </div>
+                            <div class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="stat-container">
+                                <div class="top">
+                                    <img src="./assets/images/stat-user.png" alt="user 1">
+                                    Coming your way...
+                                </div>
+                                <div class="bottom">
+                                    <div class="chart">
+                                        <svg width="102" height="76" viewBox="0 0 102 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line opacity="0.5" x1="18.7901" y1="1.15277" x2="98.7139" y2="1.15277" stroke="white" stroke-opacity="0.6" stroke-width="0.868737" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="18.7901" y1="12.4464" x2="98.7139" y2="12.4464" stroke="white" stroke-opacity="0.6" stroke-width="0.868737" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="18.7901" y1="23.7399" x2="98.7139" y2="23.7399" stroke="white" stroke-opacity="0.6" stroke-width="0.868737" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="18.7901" y1="35.0335" x2="98.7139" y2="35.0335" stroke="white" stroke-opacity="0.6" stroke-width="0.868737" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="18.7901" y1="46.3271" x2="98.7139" y2="46.3271" stroke="white" stroke-opacity="0.6" stroke-width="0.868737" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="0.763858" y1="0.93559" x2="6.41065" y2="0.93559" stroke="white" stroke-width="1.30311" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="0.763858" y1="12.2292" x2="6.41065" y2="12.2292" stroke="white" stroke-width="1.30311" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="0.763858" y1="23.5228" x2="6.41065" y2="23.5228" stroke="white" stroke-width="1.30311" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="0.763858" y1="34.8163" x2="6.41065" y2="34.8163" stroke="white" stroke-width="1.30311" stroke-linecap="round"/>
+                                            <line opacity="0.5" x1="0.763858" y1="46.1099" x2="6.41065" y2="46.1099" stroke="white" stroke-width="1.30311" stroke-linecap="round"/>
+                                            <path d="M23.5682 11.8449C23.5682 10.8853 24.3461 10.1075 25.3057 10.1075H30.5181C31.4777 10.1075 32.2556 10.8853 32.2556 11.8449V45.8927H23.5682V11.8449Z" fill="white"/>
+                                            <path d="M39.2054 9.28885C39.2054 8.32927 39.9833 7.55138 40.9429 7.55138H46.1553C47.1149 7.55138 47.8928 8.32927 47.8928 9.28885V45.8928H39.2054V9.28885Z" fill="white"/>
+                                            <path d="M54.8427 19.5132C54.8427 18.5536 55.6205 17.7757 56.5801 17.7757H61.7925C62.7521 17.7757 63.53 18.5536 63.53 19.5132V45.8927H54.8427V19.5132Z" fill="white"/>
+                                            <path d="M70.48 3.32462C70.48 2.36504 71.2579 1.58714 72.2175 1.58714H77.4299C78.3895 1.58714 79.1674 2.36504 79.1674 3.32462V45.8927H70.48V3.32462Z" fill="white"/>
+                                            <path d="M86.1173 9.28885C86.1173 8.32927 86.8952 7.55138 87.8548 7.55138H93.0672C94.0268 7.55138 94.8047 8.32927 94.8047 9.28885V45.8928H86.1173V9.28885Z" fill="white"/>
+                                            <rect x="20.0933" y="58.9238" width="26.9309" height="6.9499" rx="3.47495" fill="#EF66A2"/>
+                                            <rect x="74.8237" y="58.9238" width="26.9309" height="6.9499" rx="3.47495" fill="#EF66A2"/>
+                                            <rect x="20.0933" y="68.4799" width="17.3747" height="6.9499" rx="3.47495" fill="#EF66A2"/>
+                                            <rect x="74.8237" y="68.4799" width="17.3747" height="6.9499" rx="3.47495" fill="#EF66A2"/>
+                                        </svg>          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-mobile">
+                        <div class="card">
+                            <div class="top-content">
+                                <img src="./assets/images/jane.png" class="user" />
+                                <h3>Jane</h3>
+                                <p>CEO</p>
+                            </div>
+                            <div class="bottom">
+                                <svg width="108" height="10" viewBox="0 0 108 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="4.94879" y1="4.98542" x2="103.116" y2="4.98542" stroke="#F1F1F1" stroke-width="8.68737" stroke-linecap="round"/>
+                                    <line x1="4.94879" y1="4.98542" x2="64.8916" y2="4.98542" stroke="#EE5094" stroke-width="8.68737" stroke-linecap="round"/>
+                                </svg>
+                                <p>Transfering files...</p>
+                            </div>
+                        </div>
+                        <div class="background">
+                            <img src="./assets/images/a.png" alt="a" class="main-image">
+                            <div class="text">
+                                <h3>John</h3>
+                                <p>Bla bla bla</p>
+                            </div>
+                            <div class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="bottom-card">
+                            <div class="top-content">
+                                <img src="./assets/images/sam.png" class="user" />
+                                <div>
+                                    <h3>Jane</h3>
+                                    <p>Account manager</p>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <div style="width: 100%; border-right: 1px solid #DDD;">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div style="width: 100%;">
+                                    <img src="./assets/icons/message.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </body>
 <script src="js/main.js"></script>
 </html>
