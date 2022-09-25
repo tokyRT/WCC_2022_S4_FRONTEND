@@ -1,6 +1,6 @@
 .btn{
     padding: 14px 40px;
-    border-radius: 10px;
+    border-radius: 12px;
     
 }
 .btn-filled{
@@ -16,7 +16,7 @@
     font-weight: 600;
     font-size: 14px;
     border: 0.4px solid $purple;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@
             background-color: #fff;
             padding: 14px 40px;
             position: relative;
-            border-radius: 10px;
+            border-radius: 12px;
             width: 100%;
             .text{
                 position: relative;

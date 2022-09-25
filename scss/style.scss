@@ -12,6 +12,7 @@ body{
 .background-image{
     background-image: url('../assets/images/background-line-dots.png');
     background-size: contain;
+    
     background-repeat: no-repeat;
     z-index: 1;
     position: relative;
@@ -23,7 +24,7 @@ body{
         top: 0;
         right: 0;
         z-index: -1;
-        width: 16%;
+        width: 300px;
     }
 
     .ellipse-bottom{
@@ -31,7 +32,7 @@ body{
         bottom: 0;
         left: 0;
         z-index: -1;
-        width: 16%;
+        width: 300px;
     }
 
     .bg-circle{
@@ -43,7 +44,10 @@ body{
 }
 @media(max-width: 1220px){
     .background-image{
-        background-image: none;
+        background-size: 160%;
+        .ellipse, .ellipse-bottom{
+            width: 150px;
+        }
     }
     .bg-circle{
         display: none
@@ -51,8 +55,10 @@ body{
 
     
 }
-@media(max-width: 570px){
-    
+@media(max-width: 750px){
+    .background-image{
+        background-size: 300%;
+    }
 }
 
 
@@ -61,3 +67,38 @@ body{
 @import 'partials/nav';
 @import 'partials/loader';
 @import 'partials/hero';
+
+
+.floating-element{
+    transition: all .1s;
+    // animation: floatingElement 1s infinite alternate;
+}
+// @for $i from 1 through 10 {
+//     .floating-element:nth-child(#{$i}){
+//         animation-duration: #{0.4 + random(8) / 10}s;
+//     }
+// }
+@keyframes floatingElement {
+    to{
+        transform: translateY(30px);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $pink;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $purple;
+}
